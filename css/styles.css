@@ -16,10 +16,14 @@
     padding: 20px 0px 20px 0px;
 }
 .jumbotron {
-    padding:70px 30px 70px 30px;
+    padding:60px 30px 70px 30px;
     margin:0px auto;
     background: #9575CD ;
     color:floralwhite;
+}
+.jumbotron a{
+    color: #0f0f0f;
+    text-decoration: none;
 }
 
 address{
