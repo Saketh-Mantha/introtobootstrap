@@ -52,3 +52,24 @@ body {
   position: absolute;
   bottom: 0px;
   z-index: 1; }
+
+#LoginModal .modal-header {
+  background-color: #512DA8;
+  color: floralwhite; }
+  #LoginModal .modal-header #cross {
+    color: floralwhite; }
+
+#LoginModal .modal-body {
+  background-color: #D1C4E9; }
+
+#LoginModal .modal-footer {
+  background-color: #D1C4E9; }
+
+#reservemodal .modal-header {
+  background-color: #512DA8;
+  color: floralwhite; }
+  #reservemodal .modal-header #cross {
+    color: floralwhite; }
+
+#reservemodal .modal-body {
+  background-color: #D1C4E9; }

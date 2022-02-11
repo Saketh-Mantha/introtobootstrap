@@ -71,3 +71,36 @@ body{
     bottom: 0px;
     z-index: 1;
 }
+#LoginModal{
+    .modal-header{
+        background-color: $background-dark;
+        color: floralwhite;
+        #cross{
+            color: floralwhite;
+        }
+
+    }
+    .modal-body{
+        background-color: $background-pale;
+
+    }
+    .modal-footer{
+        background-color: $background-pale;
+
+    }
+}
+#reservemodal{
+    .modal-header{
+        background-color: $background-dark;
+        color: floralwhite;
+        #cross{
+            color: floralwhite;
+        }
+
+    }
+    .modal-body{
+        background-color: $background-pale;
+
+    }
+    
+}
