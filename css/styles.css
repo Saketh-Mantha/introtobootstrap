@@ -6,10 +6,112 @@
   margin: 0px auto;
   padding: 50px 0px;
   border-bottom: 1px ridge;
-  min-height: 400px; }
+  min-height: 400px;
+  overflow: hidden;
+ }
+ .row-contents {
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
+  overflow: hidden;
+ }
+ .row-contents:nth-child(2){
+  background-color:#b597e7;
+  margin: 10px;
+  padding: 10px;
+  border: 5px solid black;
+  border-radius: 10px;
+  
+ 
+}
+.row-contents:nth-child(2):hover{
+  background-color: #512DA8;
+  color: aliceblue;
+  border-color: #42ba96;
+  transition: background-color .5s ease;
+  
+}
+.row-contents:nth-child(4){
+  background-color:#9575CD	;
+  margin: 10px;
+  padding: 10px;
+  border: 5px solid black;
+  border-radius: 10px;
+  
+ 
+}
+.row-contents:nth-child(4):hover{
+  background-color: #512DA8;
+  color: aliceblue;
+  border-color: #42ba96;
+  transition: background-color .5s ease;
+  
+}
+ .row-content:nth-child(2){
+   background-color: #9520da	;
+   margin: 10px;
+   padding: 10px;
+   border: 5px solid black;
+   border-radius: 10px;
+  
+ }
+ .row-content:nth-child(2) {
+  transition: transform 1s ease;
+}
+ .row-content:nth-child(2):hover{
+   background-color: #512DA8;
+   color: aliceblue;
+   border-color: #42ba96;
+   transform:scale(1.1);
+ }
+ .row-content:nth-child(3){
+  background-color: #ffc107;
+  margin: 10px;
+  padding: 10px;
+  border: 5px solid black;
+  border-radius: 10px;
+ 
+}
+.row-content:nth-child(3) {
+  transition: transform 1s ease;
+}
+ .row-content:nth-child(3):hover{
+   background-color: #512DA8;
+   color: aliceblue;
+   border-color:#42ba96;
+   transform:scale(1.1);
+ }
+ .row-content:nth-child(4){
+  background-color:#df4759;
+  margin: 10px;
+  padding: 10px;
+  border: 5px solid black;
+  border-radius: 10px;
+ 
+}
+.row-content:nth-child(4) {
+ transition: transform 1s ease;
+}
+.row-content:nth-child(4):hover{
+  background-color: #512DA8;
+  color: aliceblue;
+  border-color: #42ba96;
+  transform:scale(1.1);
+}
+.sm:hover{
+  background-color: #512DA8;
+  color: aliceblue;
+  border-color: #42ba96;
+  transform:scale(1.1);
+}
+.sm {
+  transition: transform .5s ease;
+}
+
 
 .footer {
-  background-color: #D1C4E9;
+  background-color: #512DA8;
   margin: 0px auto;
   padding: 20px 0px; }
 
@@ -38,11 +140,18 @@ body {
   padding: 10px; }
 
 .carousel {
-  background: #512DA8; }
+  background: #512DA8;
+  border: 5px solid #0f0f0f;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+ }
   .carousel .carousel-item {
     height: 300px; }
     .carousel .carousel-item img {
       position: absolute;
+      border: 5px solid #ffc107;
+      border-radius: 5px;
       top: 0;
       left: 0;
       min-height: 300px; }
@@ -73,3 +182,276 @@ body {
 
 #reservemodal .modal-body {
   background-color: #D1C4E9; }
+  .sk{
+    background-color: #512DA8;
+    border: 5px solid aliceblue;
+    color: aliceblue;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+  }
+  .sq{
+    font-size: 50px;
+    font-weight: bolder;
+    color: black;
+    font-family: 'Satisfy', cursive;
+    text-decoration: underline;
+  }
+ 
+@keyframes slidein{
+  0%    { opacity: 0; }
+  25%   { opacity: 0.25; }
+  50%   {opacity: 0.5;}
+  75%   {opacity: 0.75;}
+  100%  {opacity: 1;}
+}
+  
+  #menuuthapizza:hover {
+    
+    animation: slidein 1s;
+  }
+  #menubuffet:hover {
+    
+    animation: slidein 1s;
+  }
+  #menuzucchipakoda:hover {
+    
+    animation: slidein 1s;
+  }
+  #menuelaicheesecake:hover {
+    
+    animation: slidein 1s;
+  }
+  #menuvadonut:hover {
+    
+    animation: slidein 1s;
+  }
+  .fa.fa-plus{
+    justify-content: center;
+    position: absolute;
+    left: 15vw;
+    top: 9vw;
+  }
+  #menuspecial:hover {
+    
+    animation: slidein 1s;
+  }
+  #sr{
+    font-size: larger;
+    font-size: 60px;
+    font-family: 'Oleo Script', cursiv
+  }
+  #table{
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+  }
+ 
+  #table:hover{
+    background-color:#512DA8 ;
+    color: aliceblue;
+   
+    transform: scale(1.1);
+  }
+  #table:hover {
+    transition: transform .5s ease;
+  }
+ 
+
+.buttons {
+    margin: 0;
+    padding: 0;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.cart-button {
+    position: relative;
+    outline: 0;
+    background-color: #512DA8;
+    color: aliceblue;
+    border: none;
+    height: 48px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 0px;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.cart-button:focus {
+    outline: none !important
+}
+
+.cart-button .fa-shopping-cart {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: -20%;
+    font-size: 1.8em;
+    transform: translate(-50%, -50%)
+}
+
+.cart-button .fa-square {
+    position: absolute;
+    z-index: 1;
+    top: -20%;
+    left: 53%;
+    font-size: 0.8em;
+    transform: translate(-50%, -50%)
+}
+
+.cart-button span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%)
+}
+
+.cart-button span.added {
+    opacity: 0
+}
+
+.cart-button.clicked .fa-shopping-cart {
+    animation: cart 2s ease-in forwards
+}
+
+.cart-button.clicked .fa-square {
+    animation: box 2s ease-in forwards
+
+}
+.cart-button.clicked{
+  background-color: #1bcf60;
+  transition: background-color 4s ease;
+}
+
+.cart-button.clicked span.add-to-cart {
+    animation: addcart 2s ease-in forwards
+}
+
+.cart-button.clicked span.added {
+    animation: added 2s ease-in forwards
+}
+
+
+@keyframes cart {
+    0% {
+        left: -10%
+    }
+
+    40%,
+    60% {
+        left: 50%
+    }
+
+    100% {
+        left: 110%
+    }
+}
+
+@keyframes box {
+
+    0%,
+    40% {
+        top: -20%
+    }
+
+    60% {
+        top: 36%;
+        left: 53%
+    }
+
+    100% {
+        top: 40%;
+        left: 112%
+    }
+}
+
+@keyframes addcart {
+
+    0%,
+    30% {
+        opacity: 1
+    }
+
+    30%,
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes added {
+
+    0%,
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+#ss{
+  
+  font-size: 80px;
+  font-family: 'lobster', cursive;
+}
+#itemcart{
+  z-index: 99;
+}
+#carthead{
+  opacity: 0.8;
+  background-color: #b597e7;
+}
+#carthead:hover {
+ opacity: 1;
+ transition: opacity 1s ease;
+
+
+}
+#cartbody{
+  opacity: 0.9;
+  background-color: #512DA8;
+}
+
+#cartbody:hover{
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+#one:hover{
+  transform: scale(1.1);
+  transition: transform 2s ease;
+  color: aliceblue;
+}
+#two:hover{
+  transform: scale(1.1);
+  transition: transform 2s ease;
+  color: aliceblue;
+}
+#three:hover{
+  transform: scale(1.1);
+  transition: transform 2s ease;
+  color: aliceblue;
+}
+#four:hover{
+  transform: scale(1.1);
+  transition: transform 2s ease;
+  color: aliceblue;
+}
+#five:hover{
+  transform: scale(1.1);
+  transition: transform 2s ease;
+  color: aliceblue;
+}
+#six:hover{
+  transform: scale(1.1);
+  transition: transform 2s ease;
+  color: aliceblue;
+}
+
+
+/*# sourceMappingURL=styles.css.map */

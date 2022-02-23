@@ -20,7 +20,7 @@ $carousel-item-height: 300px;
 }
 
 .footer{
-    background-color: $background-pale;
+    background-color: $background-dark;
     @include zero-margin(20px, 0px);
 }
 
@@ -42,7 +42,7 @@ body{
 }
 
 .navbar-dark {
-     background-color: $background-pale;
+     background-color: $background-dark;
 }
 
 .tab-content {

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ristorante Con Fusion</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Redressed&family=Satisfy&display=swap"
+        rel="stylesheet">
+        
+    <!-- endbuild -->
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="/img/logo.png" height="30" width="41"></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><span class="fa fa-home fa-lg"></span>
+                            Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/aboutus.html"><span class="fa fa-info fa-lg"></span>
+                            About</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>
+                            Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contactus.html"><span
+                                class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                </ul>
+                <span class="navbar-text">
+                    <a id="login">
+                        <span class="fa fa-sign-in"></span>Login
+                    </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <div id="LoginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"> LOGIN</h4>
+                    <button type="button" id="cross" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                    placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1"
+                                    id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="form-row">
+                        <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                            data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                    </div>
+                </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6 ">
+                    <h1>Ristorante con Fusion</h1>
+                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
+                        lipsmacking creations will tickle your culinary senses!</p>
+                </div>
+                <div class="col-12 col-sm align-self-center">
+                    <img src="/img/logo.png" class="img-fluid">
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+    <div class="container">
+        <div class="row">
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active">Menu</li>
+            </ol>
+            <div class="col-12">
+                <h3>Menu</h3>
+                <hr>
+            </div>
+        </div>
+        <div class="row row-contents align-items-center">
+            <div class="row row-content">
+                <div class=" col-12 col-sm-10 offset-2">
+                    <h1 class="sq">Welcome to Ristorante con Fusion</h1>
+                </div>
+                <div class="col-12 col-sm-6 offset-5">
+                    <img class="d-block img-fluid" src="/img/logo.png">
+                </div>
+                <div class="col-10  offset-4" id="ss">
+                    <span>Menu Card</span>
+                </div>
+            </div>
+            
+
+            <div class="col-12 col-sm-6">
+                <div class="sm" id="sm">
+                    <span class=" card  bg-danger mb-3">
+                        <div class="card-header">
+                            <h3 class="text-white text-center">Uthappizza</h3>
+                        </div>
+                        <div class="card-body align-items-center" id="menuuthapizza">
+                            <span class="badge badge-pill badge-success offset-4 mb-2">
+                                <h2 class="text-center text-dark">Bestseller</h2>
+                            </span>
+                            <img class="d-block rounded mx-auto img-fluid " src="/img/uthappizza.png" alt="uthapizza">
+                            <span class="badge badge-pill badge-warning">
+                                <h2 class="text-center">$2.99</h2>
+                            </span>
+                            <div class="buttons mb-3"> <button class="cart-button"> <span class="add-to-cart">Add to cart</span> <span class="added">Item added</span> <i class="fa fa-shopping-cart"></i> <i class="fa fa-square"></i> </button> </div>
+                            <p class="d-none" id="uthapizzatext">A unique combination of Indian Uthappam (pancake) and
+                                Italian pizza, topped with Cerignola olives, ripe vine
+                                cherry tomatoes, Vidalia onion, Guntur chillies and
+                                Buffalo Paneer.</p>
+                        </div>
+
+                    </span>
+                </div>
+
+            </div>
+            <div class="col-12 col-sm-6 mb-3">
+                <div class="sm" id="sm">
+                    <div class="card bg-danger">
+                        <div class="card-header">
+                            <h3 class="text-white text-center">Buffet</h3>
+                        </div>
+                        <div class="card-body align-items-center" id="menubuffet">
+                            
+                            <img class="d-block rounded mx-auto img-fluid " src="/img/buffet.png" alt="uthapizza">
+                            <span class="badge badge-pill badge-warning">
+                                <h2 class="text-center">$6.99</h2>
+                            </span>
+                            <div class="buttons mb-3"> <button class="cart-button" id="button2"> <span class="add-to-cart">Add to cart</span> <span class="added">Item added</span> <i class="fa fa-shopping-cart"></i> <i class="fa fa-square"></i> </button> </div>
+                            <p class="d-none" id="buffettext">Featuring mouthwatering combinations with a choice of five
+                                different salads, six enticing appetizers, six main entrees and five choicest desserts.
+                                Free flowing bubbly and soft drinks.
+                            </p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <br><br>
+            <div class="col-12 col-sm-6 mb-3">
+                <div class="sm" id="sm">
+                    <span class="card bg-danger">
+                        <div class="card-header">
+                            <h3 class="text-white text-center">Zucchipakoda</h3>
+                        </div>
+                        <div class="card-body align-items-center" id="menuzucchipakoda">
+                            <img class="d-block rounded mx-auto img-fluid " src="/img/zucchipakoda.png" alt="uthapizza">
+                            <span class="badge badge-pill badge-warning">
+                                <h2 class="text-center">$3.99</h2>
+                            </span>
+                            <div class="buttons mb-3"> <button class="cart-button"> <span class="add-to-cart">Add to cart</span> <span class="added">Item added</span> <i class="fa fa-shopping-cart"></i> <i class="fa fa-square"></i> </button> </div>
+                            <p class="d-none" id="zucchipakodatext">Deep fried Zucchini coated with mildly spiced
+                                Chickpea flour batter accompanied with a sweet-tangy tamarind sauce
+                            </p>
+
+                        </div>
+
+                    </span>
+                </div>
+
+            </div>
+            <div class="col-12 col-sm-6 mb-3">
+                <div class="sm" id="sm">
+                    <div class="card bg-danger">
+                        <div class="card-header">
+                            <h3 class="text-white text-center">ElaiCheese Cake</h3>
+                        </div>
+                        <div class="card-body align-items-center" id="menuelaicheesecake">
+                            <span class="badge badge-pill badge-success offset-4 mb-2">
+                                <h2 class="text-center text-dark">Bestseller</h2>
+                            </span>
+                            <img class="d-block rounded mx-auto img-fluid " src="/img/elaicheesecake.png"
+                                alt="uthapizza">
+                            <span class="badge badge-pill badge-warning">
+                                <h2 class="text-center">$5.99</h2>
+                            </span>
+                            <div class="buttons mb-3"> <button class="cart-button"> <span class="add-to-cart">Add to cart</span> <span class="added">Item added</span> <i class="fa fa-shopping-cart"></i> <i class="fa fa-square"></i> </button> </div>
+
+                            <p class="d-none" id="elaicheesecaketext">A delectable, semi-sweet New York Style Cheese
+                                Cake, with Graham cracker crust and spiced with Indian cardamoms
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-sm-6 mb-3">
+                <div class="sm" id="sm">
+                    <span class="card bg-danger">
+                        <div class="card-header">
+                            <h3 class="text-white text-center">Vadonut</h3>
+                        </div>
+                        <div class="card-body align-items-center" id="menuvadonut">
+                            <img class="d-block rounded mx-auto img-fluid " src="/img/vadonut.png" alt="uthapizza">
+                            <span class="badge badge-pill badge-warning">
+                                <h2 class="text-center">$1.99</h2>
+                            </span>
+                            <div class="buttons mb-3"> <button class="cart-button"> <span class="add-to-cart">Add to cart</span> <span class="added">Item added</span> <i class="fa fa-shopping-cart"></i> <i class="fa fa-square"></i> </button> </div>
+                            <p class="d-none" id="vadonuttext">A quintessential ConFusion experience, is it a vada or is
+                                it a donut?
+                            </p>
+                        </div>
+
+                    </span>
+                </div>
+
+            </div>
+            <div class="col-12 col-sm-6 mb-3">
+                <div class="sm" id="sm">
+                    <div class="card bg-danger">
+                        <div class="card-header">
+                            <span class="badge badge-success offset-3">
+                                <h3 class="text-white text-center">Today's special!</h3>
+                            </span>
+                        </div>
+
+                        <div class="card-body align-items-center" id="menuspecial">
+                            <div class="row">
+                                <img class="d-block rounded offset-2 img-fluid " src="/img/uthappizza.png"
+                                    alt="uthapizza">
+                                <span class="fa fa-lg fa-plus"></span>
+                                <img class="d-block rounded offset-2 img-fluid " src="/img/vadonut.png" alt="uthapizza">
+
+                                <span class="badge badge-pill badge-warning mt-2">
+                                    <h2 class="text-center">@ $3.00</h2>
+                                </span>
+                            </div>
+                            <div class="buttons mb-3"> <button class="cart-button"> <span class="add-to-cart">Add to cart</span> <span class="added">Item added</span> <i class="fa fa-shopping-cart"></i> <i class="fa fa-square"></i> </button> </div>
+                            <p class="d-none" id="specialtext"> Enjoy Today's conFusion Offer of the delicious vadonut
+                                and uthapizza at just $3.00!!!!!!!!!
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/aboutus.html">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="/contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+                        121, Clear Water Bay Road<br>
+                        Clear Water Bay, Kowloon<br>
+                        HONG KONG<br>
+                        <i class="fa fa-phone fa-lg"></i>: 1234 5678<br>
+                        <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+                        <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
+                    </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
+                                class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i
+                                class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
+                                class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                                class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                                class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>© Copyright 2018 Ristorante Con Fusion</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/js/scripts.js"></script>
+
+
+    <!-- endbuild -->
+
+</body>
+
+</html>
